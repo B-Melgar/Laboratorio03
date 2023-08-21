@@ -55,7 +55,7 @@
         });
 
         function addToCart(productName, price) {
-    // Declaración y inicialización de la variable cart
+    // Declaración e inicialización de la variable cart
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     
     // Agregar el producto al carrito
@@ -63,7 +63,7 @@
     
     // Actualizar el carrito en el Local Storage
     localStorage.setItem('cart', JSON.stringify(cart));
-    
+            
     // Mostrar mensaje
     showMessage("Producto agregado al carrito: " + productName);
 }
